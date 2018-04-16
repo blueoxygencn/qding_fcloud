@@ -2,13 +2,15 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>千丁计费云：概览</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="include/style.css">
-	</head>
+<head>
+<title>千丁计费云：概览</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="include/style.css" />
+</head>
+
 <body>
-	<div id="navigation">
+    <div id="wrapper">
+         <div id="navigation">
             <ul>
 <li><a class="active" href="index.html">概览</a></li>
 
@@ -25,129 +27,79 @@
 <li><a href="montecarlo.html">Monte Carlo 模拟</a></li>
             </ul>
         </div>
-	<div id="contentwrap">	
-	<div id="sidebar">
-		<div id="cost" class="box">
-			<h2>成本</h2>
-			<p class="number"><span class="data-missing">无</span></p>
-		</div>
-		<div id="completed" class="box">
-			<h2><span class="number">0%</span>已完成</h2>
-			<div id="bar"><div id="fill" style="width:0%;"></div></div>
-			<p><span class="label">开始：</span>18/3/6 上午8:00</p>
-			<p><span class="label">结束日期：</span>18/8/24 下午5:00</p>
-			<p><span class="label">差异：</span><span class="data-missing">无</span></p>
-		</div>	
-		
-	</div>
-	<div id="maincontent" class="box">
-		<h1>千丁计费云</h1>
-		
-		<h2>资源摘要</h2>
-		<div class="tablewrap">
-               <table class="basic" id="resource-report">
-            <tr>
-<th>名称</th>
-<th>开始日期</th>
-<th>结束日期</th>
-<th>持续时间</th>
-<th>完成百分比</th>
-<th>分配成本</th>
-            </tr>
 
-            <tr class="resource Staff">
-<td style="padding-left: 10px;">王路团队</td>
-<td>18/3/7 上午8:00</td>
-<td>18/6/22 下午5:00</td>
-<td>17 周 3 天</td>
-<td>0%</td>
-<td></td>
-            </tr>
+        <div id="content">
+<h1>千丁计费云</h1>
+            
+                <ul id="dates">
+                    <li class="column" id="startwrap">
+	                    <h3 id="start">开始:</h3>
+						<p>18/3/6 上午8:00</p></li>
+                    <li class="column"  id="endwrap">
+	                    <h3 id="end">结束:</h3>
+						<p>18/8/24 下午5:00</p>
+                    </li>
 
-            <tr class="resource Staff">
-<td style="padding-left: 10px;">张兴团队</td>
-<td>18/4/2 上午8:00</td>
-<td>18/7/31 下午5:00</td>
-<td>19 周 4 天</td>
-<td>0%</td>
-<td></td>
-            </tr>
-
-            <tr class="resource Staff">
-<td style="padding-left: 10px;">宝龙团队</td>
-<td>18/4/16 上午8:00</td>
-<td>18/6/29 下午5:00</td>
-<td>11 周</td>
-<td>0%</td>
-<td></td>
-            </tr>
-
-            <tr class="resource Staff">
-<td style="padding-left: 10px;">龙湖外包</td>
-<td>18/4/9 上午8:00</td>
-<td>18/6/29 下午5:00</td>
-<td>25 周 4 天</td>
-<td>0%</td>
-<td></td>
-            </tr>
-
-            <tr class="resource Staff">
-<td style="padding-left: 10px;">缺口资源1</td>
-<td>18/5/1 上午8:00</td>
-<td>18/5/31 下午5:00</td>
-<td>4 周 3 天</td>
-<td>0%</td>
-<td></td>
-            </tr>
-
-        </table>
-            </div>
-<h2>挣值分析摘要</h2>
- <div class="tablewrap">
-            <table class="basic">
-
-	<tr>
-
-		<th>计划值</th>
-		<th>挣值</th>
-		<th>实际成本</th>
-		<th>成本差异</th>
-		<th>进度差异</th>
-		<th>完工估算</th>
-		<th>完工时预算</th>
-		<th>完工差异</th>
-		<th>CPI</th>
-		<th>SPI</th>
-		<th>CV %</th>
-		<th>SV %</th>
-		<th>TCPI</th>
-		
-	</tr>
-		 	
-	<tr>
-
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	 
-</table>
-            </div>
+                </ul>    	
 
 
-       
+<ul id="triowrap">
+  <li id="first" class="column">
+<h3>差异：</h3><p><span class="data-missing">无</span></p></li>
+  <li id="middle" class="column">
+<h3>完成情况：</h3><p>0%</p>
+    <div id="bar"><div id="fill" style="width:0%;"></div></div></li>
+  <li id="third" class="column">
+<h3>成本 :</h3><span class="data-missing">无</span></li>
+</ul>
+
+
+<h2>日历</h2>
+<p class="milestones"><a href="javascript:alert('无项目里程碑')"><img src="include/mini-ics.png"/> 项目里程碑</a></p>
+			<div class="tablewrap">
+                    <table class="basic" id="resource">
+                        <tr>
+<th>资源</th>
+
+<th>日历</th>
+
+<th>任务列表</th>
+                        </tr>
+					
+                    <tr>
+<td class="wrap">王路团队</td>
+<td class="wrap"><a href="calendars/1%20%E7%8E%8B%E8%B7%AF%E5%9B%A2%E9%98%9F.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>王路团队 日历</a></td>
+<td class="wrap"><a href="todos/1%20%E7%8E%8B%E8%B7%AF%E5%9B%A2%E9%98%9F.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>王路团队 的待办事项列表</a></td>
+                    </tr>
+
+                    <tr>
+<td class="wrap">张兴团队</td>
+<td class="wrap"><a href="calendars/2%20%E5%BC%A0%E5%85%B4%E5%9B%A2%E9%98%9F.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>张兴团队 日历</a></td>
+<td class="wrap"><a href="todos/2%20%E5%BC%A0%E5%85%B4%E5%9B%A2%E9%98%9F.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>张兴团队 的待办事项列表</a></td>
+                    </tr>
+
+                    <tr>
+<td class="wrap">宝龙团队</td>
+<td class="wrap"><a href="calendars/5%20%E5%AE%9D%E9%BE%99%E5%9B%A2%E9%98%9F.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>宝龙团队 日历</a></td>
+<td class="wrap"><a href="todos/5%20%E5%AE%9D%E9%BE%99%E5%9B%A2%E9%98%9F.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>宝龙团队 的待办事项列表</a></td>
+                    </tr>
+
+                    <tr>
+<td class="wrap">龙湖外包</td>
+<td class="wrap"><a href="calendars/3%20%E9%BE%99%E6%B9%96%E5%A4%96%E5%8C%85.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>龙湖外包 日历</a></td>
+<td class="wrap"><a href="todos/3%20%E9%BE%99%E6%B9%96%E5%A4%96%E5%8C%85.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>龙湖外包 的待办事项列表</a></td>
+                    </tr>
+
+                    <tr>
+<td class="wrap">缺口资源1</td>
+<td class="wrap"><a href="calendars/4%20%E7%BC%BA%E5%8F%A3%E8%B5%84%E6%BA%901.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>缺口资源1 日历</a></td>
+<td class="wrap"><a href="todos/4%20%E7%BC%BA%E5%8F%A3%E8%B5%84%E6%BA%901.ics"><img class="small-icon" src="include/ics.png" alt="iCalendar"/>缺口资源1 的待办事项列表</a></td>
+                    </tr>
+
+                    </table>
+			</div> 
+<p class="footer">输出日期 18/4/16</p>
             </div><!-- end content-->
-	</div><!-- end contentwrap -->
-	 <p class="exported">输出日期 18/4/4</p>
-
-</body>	
+    </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,38 +9,27 @@
 </head>
 
 <body>
-    <div id="navigation">
-        <ul>
-            <li>
-<a href="index.html">概览</a>
-            </li>
+    <div id="wrapper">
+         <div id="navigation">
+            <ul>
+<li><a href="index.html">概览</a></li>
 
-            <li>
-<a href="task.html">任务报告</a>
-            </li>
+<li><a href="task.html">任务报告</a></li>
 
-            <li>
-<a href="resource.html">资源报告</a>
-            </li>
+<li><a href="resource.html">资源报告</a></li>
+                
+<li><a class="active" href="eva.html">挣值分析</a></li>
 
-            <li>
-<a href="eva.html" class="active">挣值分析</a>
-            </li>
+<li><a href="gantt.html">甘特图</a></li>
 
-            <li>
-<a href="gantt.html">甘特图</a>
-            </li>
+<li><a href="timeline.html">资源时间线</a></li>
+                
+<li><a href="montecarlo.html">Monte Carlo 模拟</a></li>
+            </ul>
+        </div>
 
-            <li>
-<a href="timeline.html">资源时间线</a>
-            </li>
-<li><a href="montecarlo.html">Monte Carlo 模拟</a></li>  
-        </ul>
-    </div>
-
-    <div id="contentwrap">
-        <div id="content" class="box">
-<h1>千丁计费云：挣值分析</h1>
+        <div id="content">
+<h1>千丁计费云：<span class="subtitle">挣值分析</span></h1>
 
             <div class="tablewrap">
             <table class="basic">
@@ -540,9 +529,22 @@
 	</tr>
 	
 </table>
-        </div><!-- end table wrap -->
-	</div>
-    </div><!-- end contentwrap -->
-	 <p class="exported">输出日期 18/4/4</p>
+            </div>
+            <div id="key">
+	            <h4>密钥</h4>
+	            <ul>
+		            <li>计划值 - 已计划工作的预算成本 (BCWS)</li>
+		            <li>挣值 - 已执行工作的预算成本 (BCWP)</li>
+		            <li>CPI - 成本绩效指数</li>
+		            <li>SPI - 进度绩效指数</li>
+		            <li>CV% - 成本差异百分比</li>
+		            <li>SV% - 进度差异百分比</li>
+		            <li>TCPI - 待完成绩效指数</li>
+	            </ul>    
+            </div>
+			</div> 
+<p class="footer">输出日期 18/4/16</p>
+        </div>
+    </div>
 </body>
 </html>
